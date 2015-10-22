@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body, html {
+	height: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p, a, a:visited {
+	font-size: 12px;
+	font-family: arial;
+	color: white;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+.page-wrapper {
+	min-height: 100%;
+	margin-bottom: -$footer-height;
+}
+
+.page-wrapper:after {
+	content: "";
+	display: block;
+	height: $footer-height;
+}
+
+header{
+	background: $istanbul-red;
+	height: 300px;
+	h1 {
+		font-size: 30px;
+		text-transform: uppercase;
+		line-height: 2;
+		color: white;
+		font-family: arial;
+		margin: 0 auto;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		color: white;
+		font-family: arial;
+		margin: auto 10%;
+		text-align: center;
+		line-height: 1.8;
+	}
+}
+
+footer {
+	height: $footer-height;
+	background: $istanbul-red;
+	a {
+		margin: 0 auto;
+		line-height: $footer-height;
+		vertical-align: middle;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+	}
+}
+
+form {
+	input {
+		outline: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		line-height: 60px;
+		border: 0;
+		font-size: 50px;
+		&[type="submit"] {
+			background: $istanbul-red;
+			color: white;
+			@include transition(background 0.5s);
+			&:hover {
+				@include transition(background 0.5s);
+				background: darken($istanbul-red, 30%);
+			}
+		}
+	}
+}
+
+.translation-container {
+	p {
+		color: $istanbul-red;
+		font-size: 18px;
+		line-height: 2;
+		vertical-align: middle;
+		text-align: center;
+	}
+}

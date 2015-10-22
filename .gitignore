@@ -1,0 +1,13 @@
+.env
+.sass-cache/
+public/*.css
+public/public/
+public/jquery-2.1.4.min.js
+public/stylesheets/.sass-cache/
+public/stylesheets/*.css
+public/stylesheets/*.css.map
+public/stylesheets/sass/*.css
+public/stylesheets/sass/*.css.map
+public/stylesheets/sass/bourbon/
+brown/
+

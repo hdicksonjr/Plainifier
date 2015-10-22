@@ -1,0 +1,14 @@
+development:
+ adapter: postgres
+ encoding: utf8
+ database: plainifier
+
+test:
+ adapter: postgres
+ encoding: utf8
+ database: plainifier_test
+
+production:
+ adapter: postgres
+ encoding: utf8
+ database: plainifier_prod

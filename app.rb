@@ -7,9 +7,9 @@ require 'verbs'
 require 'yaml'
 
 configure :development do
-	require 'better_errors'
+  require 'better_errors'
   use BetterErrors::Middleware
-	BetterErrors.application_root = File.expand_path('..', __FILE__)
+  BetterErrors.application_root = File.expand_path('..', __FILE__)
 end
 
 set :partial_template_engine, :slim
@@ -30,11 +30,11 @@ end
 post "/sentence-submit" do
   sentence = Sentence.new(params["sentence"])
 
-	sentence.word_array.each do |w|
-	  p w.pos_tag
-		p w.final_use
-	end
+  sentence.word_array.each do |w|
+    p w.pos_tag
+    p w.final_use
+  end
 
-	sentence.final_translated
+  sentence.final_translated
 end
 

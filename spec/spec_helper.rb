@@ -10,11 +10,11 @@ require File.expand_path '../../app.rb', __FILE__
 
 module RspecMixin
   include Rack::Test::Methods
-	def app() Sinatra::Application end
+  def app() Sinatra::Application end
 end
 
 RSpec.configure do |c|
-	c.include RspecMixin 
-	c.color = true
-	c.tty = true
+  c.include RspecMixin 
+  c.color = true
+  c.tty = true
 end

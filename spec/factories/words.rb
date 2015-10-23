@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :word do |f|
-	  f.name = "the"
-	end
+    f.name = "the"
+  end
 end
+

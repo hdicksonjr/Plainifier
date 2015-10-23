@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :tag do |f|
-	  f.name {"bedz"}
-	end
+    f.name {"bedz"}
+  end
 end

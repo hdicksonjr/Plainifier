@@ -12,13 +12,14 @@ file_names = ["ad", "conj", "noun", "prep", "pro", "verb"]
 
 file_names.each do |file_name|
 
-	File.open("./dictionary/#{file_name}.txt").each_line do |line|
-	  line.gsub!("\n", "")
-		@word = Word.find(:name => line)
+  File.open("./dictionary/#{file_name}.txt").each_line do |line|
+  line.gsub!("\n", "")
+  @word = Word.find(:name => line)
 
-		if @word
-			@word.special = true
-			@word.save_changes
-		end
-	end
+    if @word
+      @word.special = true
+      @word.save_changes
+    end
+  end
 end
+
